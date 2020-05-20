@@ -19,6 +19,10 @@ IMAGE_FEATURES += " \
     eclipse-debug       \
     "
 
+# ------------------------------------------------------
+# removed splash
+IMAGE_FEATURES_remove += " splash "
+
 # Define ROOTFS_MAXSIZE to 3GB
 IMAGE_ROOTFS_MAXSIZE = "3145728"
 
@@ -40,3 +44,6 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-framework-sample-qt            \
     packagegroup-framework-sample-qt-examples   \
     "
+# ------------------------------------------------------
+# add sample program
+IMAGE_INSTALL_append += " qt-hellow-world"
