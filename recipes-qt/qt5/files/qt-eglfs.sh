@@ -10,6 +10,9 @@ export QT_QPA_EGLFS_ALWAYS_SET_MODE=1
 #force to use KMS ATOMIC
 export QT_QPA_EGLFS_KMS_ATOMIC=1
 
+export QT_QPA_FONTDIR=/usr/share/fonts/truetype
+export XDG_RUNTIME_DIR=/tmp/runtime-root
+
 # EGLFS environment variables accessible for qt 5.12
 # Documentation: https://doc.qt.io/qt-5/embedded-linux.html
 ##
